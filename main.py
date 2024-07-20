@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Load the image
-image = cv2.imread('path_to_your_image.png', cv2.IMREAD_COLOR)
+image = cv2.imread('DataFiles/inputs/colon.png', cv2.IMREAD_COLOR)
 
 # Convert to grayscale
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -18,4 +18,4 @@ magnitude = cv2.magnitude(sobel_x, sobel_y)
 magnitude = np.uint8(255 * magnitude / np.max(magnitude))
 
 # Save the result
-cv2.imwrite('edge_detected_image.png', magnitude)
+cv2.imwrite('DataFiles/results/colon_edge_detected_image.png', magnitude)
