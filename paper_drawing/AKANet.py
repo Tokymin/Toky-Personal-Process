@@ -44,7 +44,7 @@ def box_plot():
 
 def stacked_bar():
     rcParams['font.family'] = 'serif'
-    fontsize=16
+    # fontsize=16
     rcParams['font.size'] = 24  # Set the default font size to 16
     rcParams['font.serif'] = ['Times New Roman']
     # Data from the table
@@ -53,8 +53,8 @@ def stacked_bar():
     finetune = ['×', '√', '-', '-']
     ate_mean = [3.60, 2.81, 2.08, 1.26]
     ate_std = [1.60, 1.62, 1.79, 0.48]
-    rmse_mean = [4.34, 4.15, 3.97, 3.73]
-    rmse_std = [0.90, 1.12, 1.41, 1.48]
+    rmse_mean = [0.59, 0.57, 0.54, 0.51]
+    rmse_std = [0.12,0.15, 0.19, 0.20]
 
     x = np.arange(len(models))  # the label locations
     width = 0.35  # the width of the bars
